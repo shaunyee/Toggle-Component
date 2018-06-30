@@ -1,6 +1,6 @@
 import React, { Component, Fragment, createContext } from 'react';
 import { Transition } from 'react-spring';
-import User from './User';
+import Drag from './Drag';
 import UserProvider from './UserProvider';
 import { Toggle } from 'Utilities'
 import { Modal, Card } from 'Elements'
@@ -17,23 +17,7 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">Welcome to React</h1>
           </header>
-          <User />
-          <section>
-          <Toggle> 
-            {({ on, toggle }) => (
-              <Fragment>
-                <button onClick={toggle}>Show / Hide</button>
-                <Transition
-                from={{opacity: 0, bg: '#82d8d8', height: '0px'}}
-                enter={{opacity: 1, bg: '#524763', height: '200px'}}
-                leave={{opacity: 0, bg: '#82d8d8', height: '0px'}}
-                >
-                  {on && Header}
-                </Transition>
-              </Fragment>
-              )}
-            </Toggle>
-            </section>
+          <Drag />
           <Toggle> 
             {({ on, toggle }) => (
               <Fragment>

@@ -6,7 +6,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
-    "react-spring": "^5.3.18"
+    "react-spring": "^5.3.18",
+    "react-with-gesture": "^1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",
